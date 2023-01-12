@@ -1,5 +1,7 @@
 # yanhun1234.github.io/
-
+<link rel="icon"
+          href="https://static.box3.codemao.cn/block/QmX5Vw756QtbwTxAZDywii6j8My7SY2J2PGNo3CgyVAp3y.jpg_cover_1024_1024.png"
+          type="image/x-icon">
 <br>box3香肠派对首页：
 <br>https://box3.codemao.cn/g/911915
 <br>
