@@ -1,4 +1,4 @@
-# yanhun1234.github.io/yf
+# yanhun1234.github.io/
 
 <br>box3香肠派对首页：
 <br>https://box3.codemao.cn/g/911915
