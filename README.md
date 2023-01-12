@@ -7,3 +7,6 @@
 <br>
 <br>box3香肠派对预告网站！！！
 <br>在这里可以看到最新box3香肠派对预告消息！！！
+<br>
+<br>预告链接：
+<br>https://yanhun1234.github.io/box3-Sausage-Party/html/
