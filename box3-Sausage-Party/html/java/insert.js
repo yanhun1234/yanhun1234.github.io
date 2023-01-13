@@ -1,9 +1,3 @@
-<html>
-<head>
-
-</head>
-<body>
-<script>
 function clickEffect() {
   let balls = [];
   let longPressed = false;
@@ -138,7 +132,3 @@ function clickEffect() {
   }
 }
 clickEffect();//调用特效函数
-
-</script>
-</body>
-</html>
