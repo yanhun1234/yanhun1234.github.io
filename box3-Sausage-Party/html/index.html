@@ -7,10 +7,74 @@
           href="https://static.box3.codemao.cn/block/QmX5Vw756QtbwTxAZDywii6j8My7SY2J2PGNo3CgyVAp3y.jpg_cover_1024_1024.png"
           type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/attachment.css">
-    <link rel="scriptheet" type="text/javascript" href="./java/insert.js">
-    <link rel="scriptheet" type="text/javascript" href=".html/java/tx/tx.js">
+    <style>
+canvas{
+ display: block;border:1px dotted skyblue;
+}
+ body{
+  font-family: 微软雅黑;
+ }
+
+ 
+    
+    </style>
 </head>
 <body>
+<canvas id="canvas" width="500" height="400"></canvas>
+<script>
+ var nimo={};
+window.onload=function(){
+ nimo.canvas=document.getElementById('canvas');
+ nimo.context=nimo.canvas.getContext('2d');
+
+ 
+ nimo.starBgImg=new Image();
+ nimo.starBgImg.src='http://sandbox.runjs.cn/uploads/rs/167/znddwgfj/star-bg.jpg';
+ nimo.starBgImg.onload=function(){
+
+  //填充星星背景
+  nimo.statBg=nimo.context.createPattern(nimo.starBgImg,'repeat')  
+  nimo.context.rect(0,0,nimo.canvas.width,nimo.canvas.height); 
+  nimo.context.fillStyle=nimo.statBg;
+  nimo.context.fill();
+
+  //绘制月亮轮廓
+  nimo.context.beginPath();
+  nimo.context.arc(200,200,100,0.6*Math.PI,1.3*Math.PI);
+  nimo.context.bezierCurveTo(140,119,93,224,169,295) 
+
+  //填充月亮轮廓和设置投影
+  nimo.context.shadowColor="blue";
+  nimo.context.shadowBlur=3;  
+  nimo.context.strokeStyle="blue";
+  nimo.context.stroke();
+
+  //填充放射渐变给月亮
+  nimo.radialGradient=nimo.context.createRadialGradient(150,200,0,150,200,50);  
+  nimo.radialGradient.addColorStop(0,'white')
+  nimo.radialGradient.addColorStop(1,'#999')
+  nimo.context.fillStyle=nimo.radialGradient;
+  nimo.context.fill()
+
+  //绘制月亮的研究和嘴巴    
+  nimo.context.shadowColor="white";
+  nimo.context.beginPath();
+  nimo.context.moveTo(110,173);
+  nimo.context.lineTo(114,173);
+  nimo.context.moveTo(119,173);
+  nimo.context.lineTo(123,173);  
+  nimo.context.stroke();
+
+  nimo.context.beginPath();
+  nimo.context.arc(116,183,2,0,2*Math.PI);
+  nimo.context.stroke();
+  nimo.context.shadowColor='transparent';
+  nimo.context.font="14px 微软雅黑"  
+  nimo.context.fillText('好挫的月亮!',300,300)
+ }
+}
+
+</script>
 <p>
     box3香肠派对预告网站！！！
     <br>在这里可以看到最新box3香肠派对预告消息！！！
